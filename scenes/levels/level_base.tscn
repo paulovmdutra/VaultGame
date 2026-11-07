@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://bg6oqqrco2kti"]
+
+[ext_resource type="PackedScene" uid="uid://0c626fl2mm3h" path="res://prefabs/platform.tscn" id="1_0y8gg"]
+[ext_resource type="PackedScene" uid="uid://di83ocdu5js4q" path="res://prefabs/player.tscn" id="1_u0om3"]
+[ext_resource type="PackedScene" uid="uid://c1fa80x80jppy" path="res://prefabs/border_limit.tscn" id="3_vvcwp"]
+
+[node name="LevelBase" type="Node2D" unique_id=1191996411]
+metadata/_edit_lock_ = true
+
+[node name="ReferenceRect" type="ReferenceRect" parent="." unique_id=293971486]
+offset_right = 1280.0
+offset_bottom = 256.0
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1252553141]
+
+[node name="Background" type="Node2D" parent="." unique_id=1001529724]
+metadata/_edit_lock_ = true
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1543909622]
+metadata/_edit_lock_ = true
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Platforms" unique_id=1614913379]
+metadata/_edit_lock_ = true
+
+[node name="Platform" parent="Platforms" unique_id=346014727 instance=ExtResource("1_0y8gg")]
+position = Vector2(32, 208)
+
+[node name="Platform8" parent="Platforms" unique_id=2041529420 instance=ExtResource("1_0y8gg")]
+position = Vector2(592, 224)
+
+[node name="Platform9" parent="Platforms" unique_id=492595809 instance=ExtResource("1_0y8gg")]
+position = Vector2(736, 184)
+
+[node name="Platform10" parent="Platforms" unique_id=2130700840 instance=ExtResource("1_0y8gg")]
+position = Vector2(912, 200)
+
+[node name="Platform11" parent="Platforms" unique_id=235514948 instance=ExtResource("1_0y8gg")]
+position = Vector2(1104, 200)
+
+[node name="Platform7" parent="Platforms" unique_id=1384019063 instance=ExtResource("1_0y8gg")]
+position = Vector2(432, 192)
+
+[node name="Platform2" parent="Platforms" unique_id=1712077992 instance=ExtResource("1_0y8gg")]
+position = Vector2(240, 128)
+
+[node name="Platform6" parent="Platforms" unique_id=1176835422 instance=ExtResource("1_0y8gg")]
+position = Vector2(400, 136)
+
+[node name="Platform3" parent="Platforms" unique_id=1588926626 instance=ExtResource("1_0y8gg")]
+position = Vector2(128, 176)
+
+[node name="Platform5" parent="Platforms" unique_id=794078238 instance=ExtResource("1_0y8gg")]
+position = Vector2(496, 136)
+
+[node name="Platform4" parent="Platforms" unique_id=1381930533 instance=ExtResource("1_0y8gg")]
+position = Vector2(256, 200)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=665124655]
+metadata/_edit_lock_ = true
+
+[node name="Collectables" type="Node2D" parent="." unique_id=2078390389]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=955452382 instance=ExtResource("1_u0om3")]
+position = Vector2(96, 160)
+
+[node name="BorderLimit" parent="." unique_id=58034699 instance=ExtResource("3_vvcwp")]
+position = Vector2(-16, -16)
+scale = Vector2(1, 18.96)
+
+[node name="BorderLimit2" parent="." unique_id=428515408 instance=ExtResource("3_vvcwp")]
+position = Vector2(1280, -16)
+scale = Vector2(1, 18.96)

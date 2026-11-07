@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://0c626fl2mm3h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
+size = Vector2(64, 16)
+
+[node name="Platform" type="StaticBody2D" unique_id=346014727]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1000713470]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_ebum8")
+debug_color = Color(0.2181586, 0.63345504, 0.25881395, 0.41960785)
